@@ -1,0 +1,168 @@
+/* Contact Container */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 20px #7fbfbf;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 0 auto; 
+    min-height: 100vh; 
+    margin-top: 25vh;
+}
+
+/* Form Section */
+.form-section {
+    flex: 1;
+    padding-right: 30px;
+    font-family: 'Arial', sans-serif; 
+}
+
+.form-section h1 {
+    font-size: 36px;
+    color: #1a202c;
+    margin-bottom: 10px;
+}
+
+.form-section h3 {
+    font-size: 18px;
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+.form-section p {
+    font-size: 16px;
+    color: #718096;
+    margin-bottom: 30px;
+}
+
+.form-section label {
+    font-size: 16px;
+    color: #2d3748;
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #2d3748;
+    border: 1px solid rgba(85, 116, 100, 0.5);
+    outline: none;
+    background-color: rgba(193, 230, 214, 0.2); 
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.form-section input[type="text"]:hover,
+.form-section input[type="email"]:hover,
+.form-section textarea:hover {
+    border-color: rgba(25, 78, 80, 1);
+    background-color: rgba(193, 230, 214, 0.4);  
+}
+
+.form-section textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* Submit Button */
+.form-section .btn {
+    padding: 10px 20px;
+    background-color: rgba(25, 78, 80, 1);
+    color: white;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-section .btn:hover {
+    background-color: rgba(79, 104, 100, 1);
+    transform: scale(1.02);
+}
+
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Map Section */
+.map-section {
+    flex: 1;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .form-section {
+        padding-right: 0; 
+    }
+
+    .map-section iframe {
+        height: 300px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .form-section h1 {
+        font-size: 28px; 
+    }
+
+    .form-section h3, .form-section p, .form-section label {
+        font-size: 14px; 
+    }
+
+    .form-section .btn {
+        padding: 8px 16px; 
+    }
+
+    .map-section iframe {
+        height: 250px; 
+    }
+}
+
+
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+    margin-left: 0; 
+}
+
+input.error, textarea.error {
+    border-color: red !important;
+    background-color: #ffe6e6 !important; 
+    margin-bottom: 5px;
+}
+
+.checkbox-container + .error-message {
+    margin-left: 25px; 
+}

@@ -1,0 +1,88 @@
+.container-form {
+    max-width: 900px;
+    margin: 20vh auto;
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #7fbfbf; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-form h2 {
+    margin-bottom: 20px;
+    font-size: 3.1rem;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(25, 78, 80, 1); 
+}
+
+.container-form label {
+    color: black;
+    font-size: 2rem;
+}
+
+.container-form input[type="text"], .container-form input[type="email"], .container-form input[type="tel"], .container-form input[type="number"], .container-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 2.5rem;
+    border: 1px solid rgba(85, 116, 100, 0.5); 
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(193, 230, 214, 0.2); 
+    transition: border 0.3s ease, background-color 0.3s ease;
+    font-size: 1.5rem;
+}
+
+.container-form input:focus {
+    border-color: rgba(25, 78, 80, 1);
+    background-color: rgba(193, 230, 214, 0.4); 
+}
+
+.container-form .btn {
+    width: 100%;
+    background-color: rgba(25, 78, 80, 1);
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.container-form .btn:hover {
+    background-color: rgba(79, 104, 100, 1);
+    transform: scale(1.02);
+}
+
+.container-form .checkbox-label {
+    font-size: 16px;
+    color: rgba(79, 104, 100, 1);
+}
+
+.container-form input[type="text"]:hover, .container-form input[type="email"]:hover, .container-form input[type="tel"]:hover, .container-form input[type="number"]:hover, .container-form select:hover {
+    background-color: rgba(193, 230, 214, 0.3); 
+    border-color: rgba(25, 78, 80, 0.8);
+}
+
+.container-form .form-group.full + .form-group.full {
+    margin-top: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.error {
+    color: red;
+    font-size: 1.4rem;
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
+    display: block;
+}
+.form-group .error {
+    margin-top: 0rem; 
+    margin-bottom: 0; 
+}
+
